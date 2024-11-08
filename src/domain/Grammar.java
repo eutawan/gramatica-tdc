@@ -24,7 +24,7 @@ public class Grammar implements IGrammar {
         }
     }
 
-    public void definirRegras(Character variavel, String stringResulting) {
+    public void setRules(Character variavel, String stringResulting) {
         if (variables.contains(variavel)) {
             if (rules.containsKey(variavel)) {
                 rules.get(variavel).add(stringResulting);
@@ -38,11 +38,6 @@ public class Grammar implements IGrammar {
         }
     }
 
-
-    @Override
-    public void setRules(Character variable, String stringResulting) {
-
-    }
 
     public Set<Character> getTerminals() {
         return terminals;
